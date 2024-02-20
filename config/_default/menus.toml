@@ -57,12 +57,12 @@
   [main.params]
     icon = "fa-solid fa-flask"
 [[main]]
-  identifier = "box"
+  identifier = "home"
   parent = "diy"
   pre = ""
   post = ""
-  name = "沙盒"
-  url = "/box/"
+  name = "导航"
+  url = "/home/"
   title = ""
   weight = 1
   [main.params]
