@@ -1,5 +1,5 @@
-<!-- Related posts  .Site.RegularPages "Params.password" "eq" nil  .Site.RegularPages "Type" "posts" -->
-{{ $related := (where site.RegularPages "Section" "in" site.Params.mainSections) | intersect (where site.RegularPages ".Title" "!=" .Title) | union (site.RegularPages.Related . ) }}
+<!-- Related posts  .Site.RegularPages "Params.password" "eq" nil  .Site.RegularPages "Type" "posts"  | union (site.RegularPages.Related . )  -->
+{{ $related := (where site.RegularPages "Section" "in" site.Params.mainSections) | intersect (where site.RegularPages ".Title" "!=" .Title) }}
 {{ $related = $related | shuffle | first 3 }}
 {{ with $related }}
 <div class="section pb-0">
