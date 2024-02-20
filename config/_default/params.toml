@@ -1,0 +1,571 @@
+# -------------------------------------------------------------------------------------
+# Theme Core Configuration
+# See: https://fixit.lruihao.cn/theme-documentation-basics/#site-configuration
+# -------------------------------------------------------------------------------------
+
+# FixIt 0.2.15 | 更改 FixIt 主题版本
+version = "0.2.X" # 例如："0.2.X", "0.2.15", "v0.2.15" 等
+# 网站描述
+description = "这是我的 Hugo FixIt 网站"
+# 网站关键词
+keywords = ["Hugo", "FixIt"]
+# 网站默认主题样式 ["light", "dark", "auto"]
+defaultTheme = "auto"
+# FixIt 0.1.1 | 新增 哪种哈希函数用来 SRI, 为空时表示不使用 SRI
+# ["sha256", "sha384", "sha512", "md5"]
+fingerprint = ""
+# FixIt 0.2.0 | 新增 日期格式
+dateFormat = "2006-01-02"
+# 网站图片，用于 Open Graph 和 Twitter Cards
+images = ["/logo.png"]
+# FixIt 0.2.12 | 新增 开启 PWA 支持
+enablePWA = true
+# FixIt 0.2.14 | 新增 是否自动显示外链图标
+externalIcon = false
+# FixIt 0.3.0 | 新增 是否反转导航菜单的顺序
+navigationReverse = false
+# FixIt 0.3.0 | 新增 是否在每个页面标题中添加网站标题
+# 请记得在 `hugo.toml` 中设置网站标题 (例如 title = "title")
+withSiteTitle = true
+# FixIt 0.3.0 | 新增 当网站标题被添加到每个页面标题时的标题分隔符
+titleDelimiter = "-"
+# FixIt 0.3.0 | 新增 是否在主页标题中添加网站副标题
+# 请记得通过 `params.header.subtitle.name` 设置网站副标题
+indexWithSubtitle = false
+# FixIt 0.2.14 | 新增 默认情况下，FixIt 只会在主页的 HTML 头中注入主题元标记
+# 你可以将其关闭，但如果你不这样做，我们将不胜感激，因为这是观察 FixIt 受欢迎程度上升的好方法
+disableThemeInject = true
+
+# 作者配置
+[author]
+  name = "ZDev"
+  email = "yy_im@outlook.com"
+  link = "https://github.com/yang2048"
+  avatar = "/images/avatar.png"
+
+# 公共 Git 仓库信息，仅在 enableGitInfo 设为 true 时有效
+[gitInfo]
+  # 例如 "https://github.com/hugo-fixit/docs"
+  repo = "https://github.com/hugo-fixit/docs"
+  branch = "main"
+  # 相对于仓库根目录的内容目录路径
+  dir = "content"
+  # 用于报告文章问题的 issue 模板
+  # 可用模板参数：{title} {URL} {sourceURL}
+  issueTpl = "title=[BUG]%20{title}&body=|Field|Value|%0A|-|-|%0A|Title|{title}|%0A|URL|{URL}|%0A|Filename|{sourceURL}|"
+
+# 应用图标配置
+[app]
+  # optional site title override for the app when added to an iOS home screen or Android launcher
+  title = "演示"
+  # whether to omit favicon resource links
+  noFavicon = false
+  # modern SVG favicon to use in place of older style .png and .ico files
+  svgFavicon = ""
+  # Safari mask icon color
+  iconColor = "#5bbad5"
+  # Windows v8-10 tile color
+  tileColor = "#da532c"
+  # FixIt 0.2.12 | CHANGED Android browser theme color
+  [app.themeColor]
+    light = "#ffffff"
+    dark = "#252627"
+
+# Search config
+[search]
+  enable = true
+  # type of search engine ("lunr", "algolia")
+  type = "algolia"
+  # max index length of the chunked content
+  contentLength = 4000
+  # placeholder of the search bar
+  placeholder = ""
+  # max number of results length
+  maxResultLength = 10
+  # snippet length of the result
+  snippetLength = 50
+  # HTML tag name of the highlight part in results
+  highlightTag = "em"
+  # whether to use the absolute URL based on the baseURL in search index
+  absoluteURL = false
+  [search.algolia]
+    index = "index"
+    appID = "MTJNHU0JVB"
+    searchKey = "5486225134d99f43826da401ee9bad57"
+
+# Header config
+[header]
+  # FixIt 0.2.13 | CHANGED desktop header mode ("sticky", "normal", "auto")
+  desktopMode = "sticky"
+  # FixIt 0.2.13 | CHANGED mobile header mode ("sticky", "normal", "auto")
+  mobileMode = "auto"
+  # Header title config
+  [header.title]
+    # URL of the LOGO
+    logo = "/logo.png"
+    # title name
+    name = "个人主页"
+    # you can add extra information before the name (HTML format is supported), such as icons
+    pre = ""
+    # you can add extra information after the name (HTML format is supported), such as icons
+    post = ""
+    # whether to use typeit animation for title name
+    typeit = false
+  # FixIt 0.2.12 | NEW Header subtitle config
+  [header.subtitle]
+    # subtitle name
+    name = "嘻嘻嘻嘻"
+    # 是否为标题显示打字机动画
+    typeit = true
+
+# 面包屑导航配置
+[breadcrumb]
+  enable = true
+  sticky = true
+  showHome = true
+
+# 页面底部信息配置
+[footer]
+  enable = true
+  # FixIt 0.2.17 | CHANGED Custom content (HTML format is supported)
+  # For advanced use, see parameter `params.customFilePath.footer`
+  custom = ""
+  # whether to show copyright info
+  copyright = true
+  # whether to show the author
+  author = true
+  # Site creation year
+  since = 2023
+  # FixIt 0.2.12 | NEW Public network security only in China (HTML format is supported)
+  gov = ""
+  # ICP info only in China (HTML format is supported)
+  icp = ""
+  # license info (HTML format is supported)
+  license = '<a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>'
+  # FixIt 0.3.0 | NEW whether to show Hugo and theme info
+  [footer.powered]
+    enable = true
+    hugoLogo = true
+    themeLogo = true
+  # FixIt 0.2.17 | CHANGED Site creation time
+  [footer.siteTime]
+    enable = true
+    animate = true
+    icon = "fa-solid fa-heartbeat"
+    pre = "博客已运行"
+    value = "2023-05-28T20:01:01+08:00"
+  # 页面底部行排序，可选值：["first", 0, 1, 2, 3, 4, 5, "last"]
+  [footer.order]
+    powered = 0
+    copyright = 0
+    statistics = "first"
+    visitor = 0
+    beian = 0
+
+# Section (all posts) page config
+[section]
+  # section 页面每页显示文章数量
+  paginate = 20
+  # 日期格式（月和日）
+  dateFormat = "01-02"
+  # amount of RSS pages
+  rss = 20
+  # 最近更新文章设置
+  [section.recentlyUpdated]
+    enable = true
+    rss = true
+    days = 30
+    maxCount = 10
+
+# List（目录或标签）页面配置
+[list]
+  # special amount of posts in each list page
+  paginate = 20
+  # date format (month and day)
+  dateFormat = "01-02"
+  # amount of RSS pages
+  rss = 20
+
+# 标签云配置
+[tagcloud]
+  enable = true
+  min = 14 # Minimum font size in px
+  max = 32 # Maximum font size in px
+  peakCount = 10 # Maximum count of posts per tag
+  orderby = "name" # Order of tags, optional values: ["name", "count"]
+
+# 主页配置
+[home]
+  # amount of RSS pages
+  rss = 20
+  # Home page profile
+  [home.profile]
+    enable = true
+    # Gravatar 邮箱，用于优先在主页显示的头像
+    gravatarEmail = ""
+    # URL of avatar shown in home page
+    avatarURL = "/images/avatar.png"
+    # 头像菜单链接的 identifier
+    avatarMenu = "about"
+    # 主页显示的网站标题（支持 HTML 格式）
+    title = ""
+    # subtitle shown in home page
+    subtitle = "在最深的绝望里，遇见最美丽的风景"
+    # whether to use typeit animation for subtitle
+    typeit = true
+    # whether to show social links
+    social = true
+    # 免责声明（支持 HTML 格式）
+    disclaimer = ""
+  # Home page posts
+  [home.posts]
+    enable = true
+    # special amount of posts in each home posts page
+    paginate = 10
+
+# Social config about the author
+[social]
+  GitHub = "yang2048"
+  Weibo = "yang2048"
+  Email = "1024@yang2048.cn"
+  RSS = true
+  Stackoverflow = ""
+  Zhihu = ""
+  Douban = ""
+  Gitea = ""
+  Bilibili = ""
+  QQ = "277315814"
+  QQGroup = ""
+  CSDN = ""
+
+# Page config
+[page]
+  # FixIt 0.2.18 | NEW whether to enable the author's avatar of the post
+  authorAvatar = false
+  # whether to hide a page from home page
+  hiddenFromHomePage = false
+  # whether to hide a page from search results
+  hiddenFromSearch = false
+  # FixIt 0.3.0 | NEW whether to hide a page from RSS feed
+  hiddenFromRss = false
+  # FixIt 0.3.0 | NEW whether to hide a page from related posts
+  hiddenFromRelated = false
+  # whether to enable twemoji
+  twemoji = true
+  # whether to enable lightgallery
+  lightgallery = "force"
+  # whether to enable the ruby extended syntax
+  ruby = true
+  # whether to enable the fraction extended syntax
+  fraction = true
+  # whether to enable the fontawesome extended syntax
+  fontawesome = true
+  # Default lisence of content.
+  license = '<a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>'
+  # whether to show link to Raw Markdown content of the post
+  linkToMarkdown = false
+  # FixIt 0.3.0 | NEW whether to show link to view source code of the post
+  linkToSource = false
+  # FixIt 0.3.0 | NEW whether to show link to edit the post
+  linkToEdit = true
+  # FixIt 0.3.0 | NEW whether to show link to report issue for the post
+  linkToReport = false
+  # whether to show the full text content in RSS
+  rssFullText = true
+  # FixIt 0.2.13 | NEW Page style ("narrow", "normal", "wide", ...)
+  pageStyle = "normal"
+  # FixIt 0.2.17 | CHANGED Auto Bookmark Support
+  # If true, save the reading progress when closing the page.
+  autoBookmark = true
+  # FixIt 0.2.17 | NEW whether to enable wordCount
+  wordCount = true
+  # FixIt 0.2.17 | NEW whether to enable readingTime
+  readingTime = true
+  # FixIt 0.2.17 | NEW end of post flag
+  endFlag = "（本文完）"
+  # FixIt 0.2.18 | NEW whether to enable instant.page
+  instantPage = true
+  # FixIt 0.3.0 | NEW whether to enable collection list at the sidebar
+  collectionList = true
+  # FixIt 0.3.0 | NEW whether to enable collection navigation at the end of the post
+  collectionNavigation = true
+
+  # Table of the contents config
+  [page.toc]
+    # whether to enable the table of the contents
+    enable = true
+    #  whether to keep the static table of the contents in front of the post
+    keepStatic = false
+    # whether to make the table of the contents in the sidebar automatically collapsed
+    auto = true
+    # FixIt 0.2.13 | NEW position of TOC ("left", "right")
+    position = "right"
+  # FixIt 0.2.13 | NEW Display a message at the beginning of an article to warn the reader that its content might be expired
+  [page.expirationReminder]
+    enable = true
+    # Display the reminder if the last modified time is more than 90 days ago
+    reminder = 90
+    # Display warning if the last modified time is more than 180 days ago
+    warning = 180
+    # If the article expires, close the comment or not
+    closeComment = true
+  # FixIt 0.3.0 | NEW page heading config
+  [page.heading]
+    # used with `markup.tableOfContents.ordered` parameter
+    [page.heading.number]
+      # whether to enable auto heading numbering
+      enable = true
+      [page.heading.number.format]
+        h1 = "{title}"
+        h2 = "{h2} {title}"
+        h3 = "{h2}.{h3} {title}"
+        h4 = "{h2}.{h3}.{h4} {title}"
+        h5 = "{h2}.{h3}.{h4}.{h5} {title}"
+        h6 = "{h2}.{h3}.{h4}.{h5}.{h6} {title}"
+  # FixIt 0.2.16 | CHANGED KaTeX mathematical formulas
+  [page.math]
+    enable = true
+    # default inline delimiter is $ ... $ and \( ... \)
+    inlineLeftDelimiter = ""
+    inlineRightDelimiter = ""
+    # default block delimiter is $$ ... $$, \[ ... \], \begin{equation} ... \end{equation} and some other functions
+    blockLeftDelimiter = ""
+    blockRightDelimiter = ""
+    # KaTeX extension copy_tex
+    copyTex = true
+    # KaTeX extension mhchem
+    mhchem = true
+  # Code config
+  [page.code]
+    # whether to show the copy button of the code block
+    copy = true
+    # FixIt 0.2.13 | NEW whether to show the edit button of the code block
+    edit = true
+    # the maximum number of lines of displayed code by default
+    maxShownLines = 50
+  # Mapbox GL JS config
+  [page.mapbox]
+    # access token of Mapbox GL JS
+    accessToken = ""
+    # style for the light theme
+    lightStyle = "mapbox://styles/mapbox/light-v9"
+    # style for the dark theme
+    darkStyle = "mapbox://styles/mapbox/dark-v9"
+    # whether to add NavigationControl
+    navigation = true
+    # whether to add GeolocateControl
+    geolocate = true
+    # whether to add ScaleControl
+    scale = true
+    # whether to add FullscreenControl
+    fullscreen = true
+  # FixIt 0.3.0 | NEW [Experimental] cache remote images locally, see: https://github.com/hugo-fixit/FixIt/pull/362
+  [page.cacheRemoteImages]
+    enable = false
+    # replace remote image url with local image url (place in public/images/remote/)
+    replace = false
+  # FixIt 0.3.0 | NEW Related content config
+  [page.related]
+    enable = false
+    count = 5
+  # FixIt 0.2.17 | NEW Donate (Sponsor) settings
+  [page.reward]
+    enable = true
+    animation = true
+    # position relative to post footer, optional value: ["before", "after"]
+    position = "before"
+    comment = "恰饭恰饭！赏豪华套餐一份~"
+    # FixIt 0.2.18 | NEW display mode of QR code images, optional values: ["static", "fixed"], default: `static`
+    mode = "fixed"
+    [page.reward.ways]
+      wechatpay = "https://cdn.jsdelivr.net/gh/yang2048/media/img/wx-qrcode-lite.png"
+      alipay = "https://cdn.jsdelivr.net/gh/yang2048/media/img/alipay-qrcode-lite.jpg"
+      # paypal = "/images/paypal.png"
+      # bitcoin = "/images/bitcoin.png"
+  # FixIt CHANGED | 0.2.0 social share links in post page
+  [page.share]
+    enable = true
+    Twitter = true
+    Facebook = true
+    Linkedin = true
+    Weibo = true
+    Baidu = true
+  # FixIt NEW | 0.2.7 Third-party library config
+  [page.library]
+    [page.library.css]
+      # someCSS = "some.css"
+      # located in "assets/"
+      # Or
+      # someCSS = "https://cdn.example.com/some.css"
+    [page.library.js]
+      # someJavascript = "some.js"
+      # Or
+      # someJavascript = "https://cdn.example.com/some.js"
+  # Page SEO config
+  [page.seo]
+    # image URL
+    images = []
+    # Publisher info
+    [page.seo.publisher]
+      name = "yang2048"
+      logoUrl = "/images/avatar.png"
+
+# TypeIt config
+[typeit]
+  # typing speed between each step (measured in milliseconds)
+  speed = 100
+  # blinking speed of the cursor (measured in milliseconds)
+  cursorSpeed = 1000
+  # character used for the cursor (HTML format is supported)
+  cursorChar = "|"
+  # cursor duration after typing finishing (measured in milliseconds, "-1" means unlimited)
+  duration = -1
+
+# FixIt 0.2.15 | NEW Mermaid config
+[mermaid]
+  # For values, see https://mermaid.js.org/config/theming.html#available-themes
+  themes = ['default', 'dark']
+
+# FixIt 0.2.12 | NEW PanguJS config
+[pangu]
+  # For Chinese writing
+  enable = true
+  selector = "article" # FixIt 0.2.17 | NEW
+
+# FixIt 0.2.12 | NEW Watermark config
+# Detail config see https://github.com/Lruihao/watermark#readme
+[watermark]
+  enable = true
+  # watermark's text (HTML format is supported)
+  content = '<img style="height: 0.85rem;" src="/logo.png" alt="logo" /> 李瑞豪。。。'
+  # watermark's transparency
+  opacity = 0.0125
+  # watermark's width. unit: px
+  width = 150
+  # watermark's height. unit: px
+  height = 20
+  # row spacing of watermarks. unit: px
+  rowSpacing = 60
+  # col spacing of watermarks. unit: px
+  colSpacing = 30
+  # watermark's tangent angle. unit: deg
+  rotate = 15
+  # watermark's fontSize. unit: rem
+  fontSize = 1.1
+  # FixIt 0.2.13 | NEW watermark's fontFamily
+  fontFamily = 'MMT_LRH,沐目体'
+
+# FixIt 0.2.12 | NEW Busuanzi count
+[ibruce]
+  enable = true
+  # Enable in post meta
+  enablePost = true
+
+# Site verification code config for Google/Bing/Yandex/Pinterest/Baidu
+[verification]
+  google = ""
+  bing = ""
+  yandex = ""
+  pinterest = ""
+  baidu = ""
+
+# FixIt 0.2.10 | NEW Site SEO config
+[seo]
+  # image URL
+  image = "/site-meta.jpg"
+  # thumbnail URL
+  thumbnailUrl = "/logo.png"
+
+# FixIt 0.2.10 | NEW Analytics config
+[analytics]
+  enable = false
+  # Google Analytics
+  [analytics.google]
+    id = ""
+    # whether to anonymize IP
+    anonymizeIP = true
+  # Fathom Analytics
+  [analytics.fathom]
+    id = ""
+    # server url for your tracker if you're self hosting
+    server = ""
+
+# Cookie consent config
+[cookieconsent]
+  enable = false
+  # text strings used for Cookie consent banner
+  [cookieconsent.content]
+    message = ""
+    dismiss = ""
+    link = ""
+
+# Compatibility config
+[compatibility]
+  # whether to use Polyfill.io to be compatible with older browsers
+  polyfill = false
+  # whether to use object-fit-images to be compatible with older browsers
+  objectFit = false
+
+# FixIt 0.2.14 | NEW GitHub banner in the top-right or top-left corner
+[githubCorner]
+  enable = false
+  permalink = "https://github.com/yang2048/hugo-blog"
+  title = "在 GitHub 上查看程式碼，訂閱請點 Watch"
+  position = "right" # ["left", "right"]
+
+# FixIt 0.2.14 | NEW Gravatar config
+[gravatar]
+  enable = true
+  # Gravatar host, default: "www.gravatar.com"
+  host = "gravatar.loli.net" # "cn.gravatar.com", "gravatar.loli.net"
+  style = "mp" # "", mp, identicon, monsterid, wavatar, retro, blank, robohash
+
+# FixIt 0.2.16 | NEW Back to top
+[backToTop]
+  enable = true
+  # Scroll percent label in b2t button
+  scrollpercent = true
+
+# FixIt 0.2.16 | NEW Reading progress bar
+[readingProgress]
+  enable = true
+  # Available values: ["left", "right"]
+  start = "left"
+  # Available values: ["top", "bottom"]
+  position = "top"
+  reversed = false
+  light = "#000"
+  dark = "#fff"
+  height = "2px"
+
+# FixIt 0.2.17 | NEW Progress bar in the top during page loading.
+# For more information: https://github.com/CodeByZach/pace
+[pace]
+  enable = true
+  # All available colors:
+  # ["black", "blue", "green", "orange", "pink", "purple", "red", "silver", "white", "yellow"]
+  color = "blue"
+  # All available themes:
+  # ["barber-shop", "big-counter", "bounce", "center-atom", "center-circle", "center-radar", "center-simple",
+  # "corner-indicator", "fill-left", "flash", "flat-top", "loading-bar", "mac-osx", "material", "minimal"]
+  theme = "minimal"
+
+# FixIt 0.2.17 | 定义自定义文件路径
+# Create your custom files in site directory `layouts/partials/custom` and uncomment needed files below
+[customFilePath]
+  aside = "custom/aside.html"
+  profile = "custom/profile.html"
+  footer = "custom/footer.html"
+
+# FixIt 0.2.15 | NEW Developer options
+[dev]
+  enable = false
+  # Check for updates
+  c4u = false
+  # Please do not expose to public!
+  githubToken = ""
+  # Mobile Devtools confi
+  [dev.mDevtools]
+    enable = false
+    # "vConsole", "eruda" supported
+    type = "eruda"

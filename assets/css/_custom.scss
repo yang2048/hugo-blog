@@ -1,0 +1,11 @@
+// ==============================
+// Custom style
+// 自定义样式
+// ==============================
+
+.home.posts .summary {
+  border-bottom: 1px dashed #ababab;
+  [data-theme='dark'] & {
+    border-bottom: 1px dashed #666666;
+  }
+}
