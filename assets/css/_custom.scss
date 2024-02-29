@@ -5,19 +5,23 @@
 
 .home.posts .summary {
   // border-bottom: 1px dashed #ababab;
-  [data-theme='dark'] & {
-    background-color: #303030;
-  }
   display: flex;
   flex-direction: column;
   background-color: #fdfdfd;
   border-radius: 10px;
   overflow: hidden;
   padding: 0 10px;
+  [data-theme='dark'] & {
+    background-color: #424242;
+  }
 }
 
 .page {
   display: flex;
   flex-direction: column;
   gap: 30px
+}
+
+footer {
+  z-index: 0;
 }
