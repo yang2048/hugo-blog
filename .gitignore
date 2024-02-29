@@ -12,6 +12,7 @@ dist
 dist-ssr
 *.local
 resources
+public
 .hugo_build.lock
 
 # Editor directories and files
@@ -24,4 +25,3 @@ resources
 *.njsproj
 *.sln
 *.sw?
-public
