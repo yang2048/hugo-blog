@@ -7,7 +7,7 @@ type: posts
 description: 这篇文章展示了基本的 Markdown 语法和格式。
 resources:
   - name: featured-image
-    src: featured-image.png
+    src: https://img11.360buyimg.com/ddimg/jfs/t1/236676/9/4948/33530/6566f6b4F60b911aa/b4c65ab375811028.jpg
 tags:
   - Markdown
   - Content

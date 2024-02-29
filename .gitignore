@@ -11,7 +11,6 @@ node_modules
 dist
 dist-ssr
 *.local
-public
 resources
 .hugo_build.lock
 
@@ -25,3 +24,4 @@ resources
 *.njsproj
 *.sln
 *.sw?
+public

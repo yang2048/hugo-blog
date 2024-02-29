@@ -226,8 +226,8 @@ disableThemeInject = true
 # Social config about the author
 [social]
   GitHub = "yang2048"
-  Weibo = "yang2048"
-  Email = "1024@yang2048.cn"
+  Weibo = ""
+  Email = "yy_im@outlook.com"
   RSS = true
   Stackoverflow = ""
   Zhihu = ""

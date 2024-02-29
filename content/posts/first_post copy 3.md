@@ -5,16 +5,11 @@ type: posts
 #aliases:
 #  - /zh-cn/basic-markdown-syntax/
 description: 这篇文章展示了基本的 Markdown 语法和格式。
-resources:
-  - name: featured-image
-    src: https://img11.360buyimg.com/ddimg/jfs/t1/236676/9/4948/33530/6566f6b4F60b911aa/b4c65ab375811028.jpg
-featuredImagePreview: https://img11.360buyimg.com/ddimg/jfs/t1/236327/39/4855/9390/6568958bF3581280a/80e2cf05f8d345c0.jpg
+featuredImagePreview: https://demo.stack.jimmycai.com/p/hello-world/cover_hud7e36f7e20e71be184458283bdae4646_55974_1600x0_resize_q75_box.jpg
 featuredImage: https://img13.360buyimg.com/ddimg/jfs/t1/229667/40/5917/28954/65708aa2F8db5f4bd/25ac8b066c34c2d6.jpg
 tags:
   - Markdown
   - Content
-  - HTML
-  - Basics
 categories:
   - Guides
 lightgallery: true

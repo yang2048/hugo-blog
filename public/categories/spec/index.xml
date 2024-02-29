@@ -1,8 +1,0 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-  <channel>
-    <title>程序猿的自我修养 - 分类 - ZDev</title>
-    <link>https://zdev.vip/categories/spec/</link>
-    <description>程序猿的自我修养 - 分类 | ZDev</description>
-    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>yy_im@outlook.com (ZDev)</managingEditor>
-      <webMaster>yy_im@outlook.com (ZDev)</webMaster><copyright>本站内容采用 CC BY-NC-SA 4.0 国际许可协议。</copyright><atom:link href="https://zdev.vip/categories/spec/" rel="self" type="application/rss+xml" /></channel>
-</rss>
