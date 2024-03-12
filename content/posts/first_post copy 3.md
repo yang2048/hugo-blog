@@ -19,12 +19,12 @@ reward: true
 
 这篇文章提供了可以在 Hugo 的文章中使用的基本 Markdown 语法示例。
 
-<!--more-->
-
 {{< admonition >}}
 这篇文章借鉴了一篇很棒的 [来自 Grav 的文章](https://learn.getgrav.org/content/markdown)。
 
 {{< /admonition >}}
+
+<!--more-->
 
 事实上，编写 Web 内容很麻烦。[WYSIWYG]^(所见即所得) 编辑器帮助减轻了这一任务。但通常会导致代码太糟，或更糟糕的是，网页也会很丑。
 

@@ -61,6 +61,27 @@ const site = new Blog('菠菜眾長', 'Lruihao', 'https://lruihao.cn');
 
 {{< music url="https://cdn-1256932288.cos.ap-chengdu.myqcloud.com/files/nanjing.mp3" name="李志" artist="你离开了南京，从此没人和我说话" cover="https://p2.music.126.net/UuSe-Vc6rS7JtRJSQgDU2g==/2323268069553116.jpg?param=300x300" fixed=true >}}
 
+
+{{< admonition tip "Welcome" >}}
+{{< typeit >}}
+互联网的广大朋友们，欢迎光临我的小博客！欢迎留言！
+{{< /typeit >}}
+
+<!-- markdownlint-disable-next-line no-inline-html -->
+<small>_关于 [FixIt 主题](https://github.com/hugo-fixit/FixIt) 的问题，请移步 [FixIt 官网](https://fixit.lruihao.cn) 相关文章哦～_</small>
+{{< /admonition >}}
+
+---
+
+温馨提示，音乐自动播放，请带好耳机～
+{.text-center style="font-size: 80%;"}
+
+{{< mmt-netease "2280569152" true >}}
+
+---
+
+{{< reward wechatpay="https://cdn.jsdelivr.net/gh/yang2048/media/img/wx-qrcode-lite.png" alipay="https://cdn.jsdelivr.net/gh/yang2048/media/img/alipay-qrcode-lite.jpg" comment="给博主买杯卡布奇诺～" >}}
+
 <!-- link reference definition -->
 [blog]: https://lruihao.cn
 [blog-repo]: https://github.com/Lruihao/hugo-blog

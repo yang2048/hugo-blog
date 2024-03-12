@@ -90,7 +90,7 @@
   avatar: https://www.fordece.cn/images/avatar.jpg
   url: https://www.fordece.cn/
   description: 某人的小栈
-# - nickname: 暂时不接受友链
-#   avatar:
-#   url: https://lruihao.cn
-#   description: 暂时不接受友链！
+- nickname: 暂时不接受友链
+  avatar:
+  url: https://lruihao.cn
+  description: 暂时不接受友链！
