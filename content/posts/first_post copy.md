@@ -8,8 +8,6 @@ description: 这篇文章展示了基本的 Markdown 语法和格式。
 resources:
   - name: featured-image
     src: featured-image.png
-password: 5678
-message: 密码是 5678
 featuredImage: https://demo.stack.jimmycai.com/p/hello-world/cover_hud7e36f7e20e71be184458283bdae4646_55974_
 featuredImagePreview: https://img13.360buyimg.com/ddimg/jfs/t1/229667/40/5917/28954/65708aa2F8db5f4bd/25ac8b066c34c2d6.jpg
 tags:

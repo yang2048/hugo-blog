@@ -34,11 +34,3 @@ keywords:
 3. 那些不尊重他人勞動成果，轉載不加出處的，或惡意行為的網站，還請你不要來進行交換了。
 
 {{< /admonition >}}
-
-{{- if .Site.Params.withSiteTitle }} {{ .Site.Params.titleDelimiter }} {{ .Site.Title }}{{- end -}}
-
-<!-- {{ range $index, $friend := .Site.Data.friends }}
- <a class="friend-link" title="{{ $friend.description }}" href="{{ $friend.url | safeURL }}" </a>
-{{ end }} -->
-
-{{< sponsor-log >}}
