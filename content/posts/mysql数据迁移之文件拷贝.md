@@ -3,6 +3,7 @@ categories:
 - 数据库
 date: '2024-03-01 10:30:00'
 description: 通过备份文件迁移MySql数据
+excerpt: 1、简述： mysql数据迁移有多种方式，最常见的就是先把数据库导出，然后导入新的数据库。拷贝数据目录data是另外一种方式。 尤其是当数据库启动不了，或者大型数据库迁移的时候，可以考虑这个方式。 2、场景： 从老的mysql（mysqlA）迁移到新的mysql（mysqlB）。mysqlA对应的数据路径为：/var/lib/mysql-old，mysqlB对应的数据路径为：/var/lib/my...
 featuredImage: https://s11.ax1x.com/2022/10/07/x3bpUx.png
 repost:
   enable: true
@@ -11,7 +12,7 @@ tags:
 - 数据库
 - MySql
 title: MySql数据迁移之文件拷贝
-updated: ''
+updated: '2024-03-01 10:30:00'
 ---
 ## 1、简述：
 
