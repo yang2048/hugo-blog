@@ -1,6 +1,6 @@
 module github.com/yang2048/hugo-starter
 
-go 1.22
+go 1.23.2
 
 require (
 	github.com/hugo-fixit/FixIt v0.3.13 // indirect
