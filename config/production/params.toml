@@ -1,0 +1,75 @@
+# -------------------------------------------------------------------------------------
+# Theme Core Configuration
+# See: https://fixit.lruihao.cn/theme-documentation-basics/#site-configuration
+# -------------------------------------------------------------------------------------
+
+# FixIt NEW | 0.1.1 which hash function used for SRI, when empty, no SRI is used
+# ("sha256", "sha384", "sha512", "md5")
+# fingerprint = "sha256"
+
+# FixIt CHANGED | 0.2.14 Comment config
+[page.comment]
+  enable = true
+  [page.comment.valine]
+    enable = true
+    appId = "kt0w4ugKHseL3mSgVLoqXq4J-MdYXbMMI"
+    appKey = "EvupHhp0fMl1Q49OGva4zMSW"
+    placeholder = "ヾﾉ≧∀≦)o~ 有事请留言！\n评论功能以邮件作为通知方式！\n如有必要请填写正确邮箱哦！"
+    avatar = "wavatar"
+    meta = ['nick','mail','link']
+    requiredFields = ['nick']
+    pageSize = 10
+    lang = "zh-CN"
+    visitor = true
+    recordIP = true
+    highlight = true
+    enableQQ = true
+    serverURLs = "https://valine.yyovo.com"
+    #  emoji data file name, default is "google.yml"
+    # ("apple.yml", "google.yml", "facebook.yml", "twitter.yml")
+    # located in "themes/FixIt/assets/lib/valine/emoji/" directory
+    # you can store your own data files in the same path under your project:
+    # "assets/lib/valine/emoji/"
+    emoji = ""
+    commentCount = true # FixIt NEW | 0.2.13
+  # FixIt 0.2.16 | CHANGED Waline comment config (https://waline.js.org)
+  [params.page.comment.waline]
+    enable = false
+    serverURL = ""
+    pageview = false # FixIt 0.2.15 | NEW
+    emoji = ["//unpkg.com/@waline/emojis@1.1.0/weibo"]
+    meta = ["nick", "mail", "link"]
+    requiredMeta = []
+    login = "enable"
+    wordLimit = 0
+    pageSize = 10
+    imageUploader = false # FixIt 0.2.15 | NEW
+    highlighter = false # FixIt 0.2.15 | NEW
+    comment = false # FixIt 0.2.15 | NEW
+    texRenderer = false # FixIt 0.2.16 | NEW
+    search = false # FixIt 0.2.16 | NEW
+    recaptchaV3Key = "" # FixIt 0.2.16 | NEW
+    reaction = false # FixIt 0.2.18 | NEW
+  # FixIt 0.2.14 | NEW Giscus comments config (https://giscus.app/)
+  [page.comment.giscus]
+    enable = true
+    repo = "yang2048/hugo-blog"
+    repoId = "MDEwOlJlcG9zaXRvcnk0MDQzNDY3MDk="
+    category = "General"
+    categoryId = "DIC_kwDOGBnXVc4CApHL"
+    mapping = "title"
+    strict = "0"
+    term = ""
+    reactionsEnabled = "1"
+    emitMetadata = "0"
+    inputPosition = "bottom" # ["top", "bottom"]
+    lightTheme = "light"
+    darkTheme = "dark_dimmed"
+    lazyLoad = true
+
+# CDN config for third-party library files
+[cdn]
+  # CDN data file name, disabled by default ["jsdelivr.yml", "unpkg.yml", ...]
+  # located in "themes/FixIt/assets/data/cdn/" directory
+  # you can store your own data files in the same path under your project: "assets/data/cdn/"
+  data = "unpkg.yml"

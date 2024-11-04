@@ -1,0 +1,322 @@
+// ==============================
+// Custom style
+// ==============================
+@import "_custom/shaky.scss";
+
+$blog-base-color: #87cfeb50 !default;
+$blog-bg-color: #f5f5fa !default;
+
+// Color of the background
+// $global-background-color: #f5f5fa !default;
+// $global-background-color-dark: #303030 !default;
+
+.home.posts .summary {
+  // border-bottom: 1px dashed #ababab;
+  display: flex;
+  flex-direction: column;
+  background-color: #fdfdfd;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 0px 30px;
+  [data-theme="dark"] & {
+    background-color: #424242;
+  }
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+header {
+  backdrop-filter: blur(10px);
+  background-color: #ffffff00;
+  [data-theme="dark"] & {
+    background-color: #ffffff00;
+  }
+}
+footer {
+  z-index: 0;
+}
+
+// 封面图尺寸适应
+@media (min-width: 768px) {
+    .home.posts .summary .featured-image-preview {
+        height: 280px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .home.posts .summary .featured-image-preview {
+        height: 320px;
+    }
+}
+
+#header-desktop {
+  @include transition(filter 0.3s ease);
+  @include box-shadow(none !important);
+
+  :root:not([data-theme="dark"]) & {
+    background-image: linear-gradient(
+      180deg,
+      lighten($blog-base-color, 5%),
+      $blog-base-color
+    );
+  }
+
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     top: 3.5rem;
+//     left: 0;
+//     width: MAX(360px, 10%);
+//     height: 110px;
+//     pointer-events: none;
+//     background-image: url(/images/drop.min.svg);
+//     // 背景图水平翻转
+//     transform: scaleX(-1);
+//     background-size: contain;
+//     background-position: top;
+//     background-repeat: no-repeat;
+
+//     [data-theme="dark"] & {
+//       background-image: url(/images/drop-dark.min.svg);
+//     }
+//   }
+
+  &:hover {
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.1));
+
+    [data-theme="dark"] & {
+      filter: drop-shadow(0 0 0.75rem rgba(255, 255, 255, 0.1));
+    }
+  }
+}
+
+.github-corner svg {
+  :root:not([data-theme="dark"]) & {
+    fill: darken($blog-base-color, 25%);
+  }
+}
+
+.container:has(.home) {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: MAX(100vh, 400px);
+    background-image: linear-gradient(
+        90deg,
+        rgba(60, 10, 30, 0.04) 1px,
+        transparent 0
+      ),
+      linear-gradient(1turn, rgba(60, 10, 30, 0.04) 1px, transparent 0);
+    background-size: 40px 40px;
+    background-position: center;
+    border-bottom: 1px solid rgba(60, 10, 30, 0.04);
+
+    [data-theme="dark"] & {
+      background-image: linear-gradient(
+          90deg,
+          rgba(195, 245, 215, 0.04) 1px,
+          transparent 0
+        ),
+        linear-gradient(1turn, rgba(195, 245, 215, 0.04) 1px, transparent 0);
+      border-bottom-color: rgba(195, 245, 215, 0.04);
+    }
+  }
+}
+
+.header-title {
+//   font-family: MMT_H, "沐目体";
+  font-size: 2rem !important;
+  font-weight: normal;
+
+//   .logo {
+//     min-height: 0.8em;
+//     height: 0.8rem;
+//     vertical-align: revert;
+//   }
+}
+
+#header-mobile {
+  .header-wrapper {
+    max-height: 3.5rem;
+  }
+
+  .header-subtitle {
+    font-size: 0.55em;
+  }
+}
+
+.single {
+  .single-subtitle {
+    color: #57606a;
+  }
+
+  .content {
+    background-image: linear-gradient(
+        90deg,
+        rgba(60, 10, 30, 0.04) 3%,
+        transparent 0
+      ),
+      linear-gradient(1turn, rgba(60, 10, 30, 0.04) 3%, transparent 0);
+    background-size: 20px 20px;
+    background-position: center;
+
+    [data-theme="dark"] & {
+      background-image: linear-gradient(
+          90deg,
+          rgba(195, 245, 215, 0.04) 3%,
+          transparent 0
+        ),
+        linear-gradient(1turn, rgba(195, 245, 215, 0.04) 3%, transparent 0);
+    }
+  }
+
+  // Content adapter generated posts style
+  &[data-adapters="projects"] {
+    .single-subtitle {
+      font-size: 1rem;
+    }
+  }
+}
+
+.home {
+  .profile-ghchart {
+    padding: 0.5rem;
+    width: MIN(663px, 100%);
+    aspect-ratio: 663/104;
+  }
+
+  .featured-image-preview {
+    mask-image: linear-gradient(
+      180deg,
+      #fff 0%,
+      rgba(255, 255, 255, 0.8) 65%,
+      rgba(255, 255, 255, 0.4) 100%
+    );
+    [data-theme="dark"] & {
+      mask-image: linear-gradient(
+        180deg,
+        #000 0%,
+        rgba(0, 0, 0, 0.8) 65%,
+        rgba(0, 0, 0, 0.4) 100%
+      );
+    }
+  }
+
+  &.posts {
+    .home-profile {
+      box-sizing: border-box;
+      height: MAX(calc(100vh - 3.5rem), 400px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .home-avatar img {
+      width: 8rem;
+    }
+  }
+}
+
+.aside-custom {
+  &:not(:first-child) {
+    margin-top: 1rem;
+  }
+}
+
+// Custom font
+// @font-face {
+//   font-family: MMT_H;
+//   src: url("/fonts/mmt_header.ttf");
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: MMT_LRH;
+//   src: url("/fonts/mmt_sign.ttf");
+//   font-display: swap;
+// }
+
+// ==============================
+// Not mobile style
+// ==============================
+@media only screen and (min-width: 681px) {
+  body {
+    :not([data-theme="dark"]) & {
+      background-color: $blog-bg-color;
+    }
+  }
+  .breadcrumb-container {
+    :root:not([data-theme="dark"]) & {
+      background-color: $blog-bg-color;
+
+      .breadcrumb {
+        border-color: darken($global-border-color, 6%);
+      }
+    }
+  }
+}
+
+// ==============================
+// Mobile style
+// ==============================
+@media only screen and (max-width: 680px) {
+  .home {
+    &.posts {
+      .home-avatar img {
+        width: 6rem;
+      }
+    }
+  }
+}
+
+// ==============================
+// Dark style
+// ==============================
+[data-theme="dark"] {
+  .single {
+    .single-subtitle {
+      color: inherit;
+    }
+  }
+}
+
+// hack valine comment
+#valine {
+  max-height: 500px;
+  overflow-y: scroll;
+
+  .vcount {
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    text-align: right;
+    font-size: 1rem;
+    background-color: $global-background-color;
+
+    [data-theme="dark"] & {
+      background-color: $global-background-color-dark;
+    }
+
+    &::after {
+      content: "来自 Valine";
+      margin-left: 0.5rem;
+      font-size: 50%;
+      @extend .text-secondary;
+    }
+  }
+
+  .vpanel,
+  .vempty,
+  .vat,
+  .vpower {
+    display: none !important;
+  }
+}

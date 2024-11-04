@@ -1,5 +1,10 @@
-module github.com/hugo-fixit/hugo-fixit-starter
+module github.com/yang2048/hugo-starter
 
-go 1.19
+go 1.22
 
-require github.com/hugo-fixit/FixIt v0.3.7 // indirect
+require (
+	github.com/hugo-fixit/FixIt v0.3.13 // indirect
+	github.com/hugo-fixit/component-projects v1.4.0 // indirect
+	github.com/hugo-fixit/shortcode-mmt-netease v1.1.1 // indirect
+	github.com/hugo-fixit/shortcode-rewards v1.0.4 // indirect
+)

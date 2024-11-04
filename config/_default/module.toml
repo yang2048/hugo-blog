@@ -6,6 +6,15 @@
 [[imports]]
   path = "github.com/hugo-fixit/FixIt"
 
+[[imports]]
+  path = "github.com/hugo-fixit/component-projects"
+
+[[imports]]
+  path = "github.com/hugo-fixit/shortcode-rewards"
+
+[[imports]]
+  path = "github.com/hugo-fixit/shortcode-mmt-netease"
+
 [hugoVersion]
   extended = true
-  min = "0.112.0"
+  min = "0.132.0"

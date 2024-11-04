@@ -31,19 +31,6 @@
 - [Go](https://go.dev/dl/)
 - [Hugo](https://gohugo.io/installation/): >= 0.112.0 (extended version)
 
-### 使用模板
-
-1. 点击 **Use this template**，在 GitHub 上创建你的存储库。
-
-    <img width="913" alt="image" src="https://github.com/hugo-fixit/hugo-fixit-starter1/assets/33419593/d5fbd940-3ffd-4750-b1e6-4e87b50b0696">
-
-2. 存储库创建后，只需克隆并享受吧！
-
-    ```bash
-    # 使用你自己的存储库 URL 进行克隆
-    git clone --recursive https://github.com/<your_name>/<your_blog_repo>.git
-    ```
-
 ### 启动站点
 
 ```bash
@@ -87,11 +74,6 @@ hugo mod tidy
 
 </details>
 
+
 ## 故障排除
 
-<details>
-  <summary>remote: Permission to git denied to github-actions[bot].</summary>
-  转到 Setting => Actions => General => Workflow permissions => 选中 "Read and write permissions"。
-</details>
-
-<!-- 此项目是使用 [hugo-fixit-starter](https://github.com/hugo-fixit/hugo-fixit-starter) 生成的。 -->

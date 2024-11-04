@@ -1,0 +1,11 @@
+# The sponsor log data format is as follows
+
+message: "> 本页面记录了自「菠菜眾長」博客创建以来，所有的打赏记录。感谢大家的支持！❤️"
+currency: CNY
+symbol: ¥
+logs:
+  - date: 2018-09-28
+    sponsor: "francs"
+    money: 50
+    origin: 支付宝
+    remark: "大学生时期，第一次收到别人的支持，内心表示受宠若惊又非常开心。非常感谢老哥的支持！"
