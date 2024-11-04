@@ -62,7 +62,7 @@
   pre = ""
   post = ""
   name = "导航"
-  url = "https://i.dev.cc"
+  url = "https://dev.cc"
   title = ""
   weight = 1
   [main.params]

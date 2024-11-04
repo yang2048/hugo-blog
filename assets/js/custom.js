@@ -35,7 +35,7 @@ class Blog {
    */
   blogInfo() {
     console.log(
-      '%c 菠菜眾長 | xdev.cc %c mail: xdevcc@gmail.com %c\n\n您好！\n欢迎光顾我的博客，\n请多多指教。\n',
+      '%c yyovo.com | yyovo.com %c mail: xdevcc@gmail.com %c\n\n您好！\n欢迎光顾我的博客，\n请多多指教。\n',
       'color: #FF0000; background: #4bffba; padding:5px 0; border-radius: 5px 5px 5px 5px;',
       'background: #fadfa3; padding:5px 0; border-radius: 5px 5px 5px 5px;',
       ''

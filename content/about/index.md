@@ -23,7 +23,7 @@ class Blog {
     this.url = url;
   }
 }
-const site = new Blog('无名博客', 'xdev', 'https://xdev.cc');
+const site = new Blog('无名博客', 'xdev', 'https://yyovo.com');
 {{< /typeit >}}
 {{< /style >}}
 

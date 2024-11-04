@@ -42,7 +42,7 @@ disableThemeInject = false
 # Author Configuration
 [author]
   name = "XDev"
-  email = "email@xdev.cc"
+  email = "email@yyovo.com"
   link = "https://github.com/yang2048"
   avatar = "/images/avatar.png"
 
@@ -541,7 +541,7 @@ disableThemeInject = false
 [watermark]
   enable = true
   # watermark's text (HTML format is supported)
-  content = '<img style="height: 1rem;" src="/logo.png" alt="logo" /> <span style="font-family:楷体;">XDEV.CC</span>'
+  content = '<img style="height: 1rem;" src="/logo.png" alt="logo" /> <span style="font-family:楷体;">yyovo.com</span>'
   # watermark's transparency
   opacity = 0.0125
   # watermark's width. unit: px

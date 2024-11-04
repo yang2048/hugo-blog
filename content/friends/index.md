@@ -14,14 +14,14 @@ keywords:
 -->
 
 <!-- markdownlint-disable-next-line no-bare-urls -->
-<!-- {{< link href="https://xdev.cc/friends/opml.xml" content=":(far fa-star fa-fw): Subscribe ours" download="opml.xml" card=true >}} -->
+<!-- {{< link href="https://yyovo.com/friends/opml.xml" content=":(far fa-star fa-fw): Subscribe ours" download="opml.xml" card=true >}} -->
 
 ## 基本資訊
 
 ```yaml
 - nickname: 菠菜眾長
-  avatar: https://xdev.cc/images/avatar.jpg
-  url: https://xdev.cc
+  avatar: https://yyovo.com/images/avatar.jpg
+  url: https://yyovo.com
   description: 我于杀戮之中盛放❤️亦如黎明中的花朵
 ```
 
