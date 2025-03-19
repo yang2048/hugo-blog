@@ -1,20 +1,22 @@
 # -------------------------------------------------------------------------------------
-# Markup related configuration in Hugo
-# See: https://gohugo.io/getting-started/configuration-markup/
+# Hugo 的标记语言相关配置
+# 参见: https://gohugo.io/getting-started/configuration-markup/
 # -------------------------------------------------------------------------------------
 
-# Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
+_merge = "shadow"
+
+# 语法高亮 (https://gohugo.io/content-management/syntax-highlighting)
 [highlight]
-  ########## necessary configurations ##########
+  ########## 必要配置 ##########
   # https://github.com/Lruihao/FixIt/issues/43
   codeFences = true
   lineNos = true
   lineNumbersInTable = true
   noClasses = false
-  ########## necessary configurations ##########
+  ########## 必要配置 ##########
   guessSyntax = true
 
-# Goldmark is from Hugo 0.60 the default library used for Markdown
+# Goldmark 是从 Hugo 0.60 开始默认使用的 Markdown 库
 [goldmark]
   [goldmark.extensions]
     definitionList = true
@@ -32,12 +34,12 @@
       block = true
       title = true
   [goldmark.renderer]
-    # By default, Goldmark ignores newlines within a paragraph. Set to true to render newlines as <br> elements.
+    # 默认情况下，Goldmark 会忽略段落内的换行。设置为 true 以将换行渲染为 <br> 元素。
     hardWraps = false
-    # whether to use HTML tags directly in the document
+    # 是否直接在文档中使用 HTML 标签
     unsafe = true
 
-# Table Of Contents settings
+# 目录设置
 [tableOfContents]
   ordered = false
   startLevel = 2

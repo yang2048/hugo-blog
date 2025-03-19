@@ -3,22 +3,44 @@
 # See: https://gohugo.io/getting-started/configuration/
 # -------------------------------------------------------------------------------------
 
-title = "Hugo FixIt Blog"
-baseURL = "https://hugo-fixit.github.io/hugo-fixit-starter/"
+title = "Blog"
+baseURL = "http://localhost:1313"
 # theme = "FixIt"
-defaultContentLanguage = "en"
-languageCode = "en"
+
+defaultContentLanguage = "zh-cn"
+disableLanguages = ["en", "zh-tw"]
+# whether to include Chinese/Japanese/Korean
+# 是否包括中日韩文字
 hasCJKLanguage = true
+# 是否使用 robots.txt
 enableRobotsTXT = true
-enableEmoji = true
+# whether to use git commit log
+# 是否使用 git 信息
 enableGitInfo = true
-relativeURLs = false
+# whether to use emoji code
+# 是否使用 emoji 代码
+enableEmoji = true
+# relativeURLs = false
 buildDrafts = false
 summaryLength = 150
+titleCaseStyle = "ap"
+capitalizeListTitles = false
+timeZone = "Asia/Shanghai"
+# the editor to use when creating new content
+# 创建新内容时使用的编辑器
+newContentEditor = "code"
+
+# default amount of posts in each pages
+# 默认每页列表显示的文章数目
+# TODO deprecated: site config key paginate was deprecated in Hugo v0.128.0 and will be removed in a future release. Use pagination.pagerSize instead. 
+# paginate = 12
+
 # ignore some build errors
 ignoreLogs = [
   "error-get-remote-image",
   "error-get-remote-json",
+  "error-get-gh-repo",
   "error-remote-getjson",
-  "error-missing-instagram-accesstoken"
+  "error-missing-instagram-accesstoken",
+  "warning-dev-version"
 ]

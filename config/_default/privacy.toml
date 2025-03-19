@@ -3,7 +3,6 @@
 # See: https://gohugo.io/about/hugo-and-gdpr/
 # -------------------------------------------------------------------------------------
 
-[twitter]
-  enableDNT = true
-[youtube]
-  privacyEnhanced = true
+[enableDNT]
+  twitter = true
+  youtube = true

@@ -1,13 +1,17 @@
 # -------------------------------------------------------------------------------------
 # Modules Configure
 # See: https://gohugo.io/hugo-modules/configuration/#module-config-imports
+# hugo mod get -u
+# hugo mod tidy
 # -------------------------------------------------------------------------------------
 
 [[imports]]
   path = "github.com/hugo-fixit/FixIt"
 [[imports]]
-  path = "github.com/hugo-fixit/shortcode-docs-bookmark"
+  path = "github.com/hugo-fixit/fixit-bundle"
+[[imports]]
+  path = "github.com/hugo-fixit/shortcode-mmt-netease"
 
 [hugoVersion]
   extended = true
-  min = "0.132.0"
+  min = "0.134.1"

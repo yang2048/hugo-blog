@@ -5,3 +5,4 @@
 
 # posts = ":year/:month/:filename"
 posts = "posts/:slugorfilename"
+private = ":sections[1:]/:slugorfilename"
