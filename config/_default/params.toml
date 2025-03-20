@@ -12,11 +12,11 @@ keywords = ["博客", "Xdev", "Hugo", "Xdev", "yyovo"]
 # 网站默认主题 ["light", "dark", "auto"]
 defaultTheme = "auto"
 # 哪种哈希函数用来 SRI，为空时表示不使用 SRI ["sha256", "sha384", "sha512", "md5"]
-fingerprint = ""
+fingerprint = "sha256"
 # 日期格式
 dateFormat = "2006-01-02"
 # 网站图片，用于 Open Graph 和 Twitter Cards
-images = ["/apple-devices-preview.webp"]
+# images = ["/apple-devices-preview.webp"]
 # 是否开启 PWA 支持
 enablePWA = true
 # 是否自动显示外链图标
@@ -42,12 +42,12 @@ disableThemeInject = false
   name = "无名"
   email = "admin@Xdev.cc"
   link = "https://Xdev.cc"
-  avatar = "/logo.png"
+  avatar = "/images/logo.png"
 
 # 公共 Git 仓库信息，仅在 enableGitInfo 设为 true 时有效
 [gitInfo]
   repo = "https://github.com/yang2048/hugo-blog"
-  branch = "master"
+  branch = "main"
   # 相对于仓库根目录的内容目录路径
   dir = "content"
   # 用于报告文章问题的 issue 模板
@@ -75,7 +75,7 @@ disableThemeInject = false
 [search]
   enable = true
   # 搜索引擎的类型 ["algolia", "fuse"]
-  type = "algolia"
+  type = "fuse"
   # 文章内容最长索引长度
   contentLength = 4000
   # 搜索框的占位提示语
@@ -121,7 +121,7 @@ disableThemeInject = false
   # 页面头部导航栏标题配置
   [header.title]
     # LOGO 的 URL，默认为网站图标
-    logo = "/logo.png"
+    logo = "/images/logo.png"
     # 标题名称，默认为网站标题
     name = "无名"
     # 你可以在名称 (允许 HTML 格式) 之前添加其他信息，例如图标
@@ -162,7 +162,7 @@ disableThemeInject = false
   # 是否显示作者
   author = true
   # 网站创建年份
-  since = 2021
+  since = 2025
   # 公共网络安全信息，仅在中国适用 (支持 HTML 格式)
   gov = ""
   # ICP 信息，仅在中国适用 (支持 HTML 格式)
@@ -180,7 +180,7 @@ disableThemeInject = false
     animate = true
     icon = "fa-solid fa-heartbeat animate-icon"
     pre = "博客已运行"
-    value = "" # 例如 "2021-12-18T16:15:22+08:00"
+    value = "2024-12-18T16:15:22+08:00" # 例如 "2021-12-18T16:15:22+08:00"
   # 页面底部行排序，可选值：["first", 0, 1, 2, 3, 4, 5, "last"]
   [footer.order]
     powered = 1
@@ -248,15 +248,15 @@ disableThemeInject = false
   [home.profile]
     enable = true
     # Gravatar 邮箱，用于首页首选头像
-    gravatarEmail = "xx@xx.com"
+    gravatarEmail = ""
     # 首页显示的头像 URL
-    avatarURL = ""
+    avatarURL = "/images/logo.png"
     # FixIt 0.2.17 | 新增 头像菜单链接标识符
-    avatarMenu = ""
-    # 首页显示的标题（支持 HTML 格式）
-    title = ""
-    # 首页显示的副标题（支持 HTML 格式）
-    subtitle = "This is my new Hugo FixIt site"
+    avatarMenu = "about"
+    # 主页显示的网站标题（支持 HTML 格式）
+    title = "Every day is beautiful if you choose to see it."
+    # 主页显示的网站副标题
+    subtitle = "如果你愿意去发现，其实每一天都很美"
     # 是否为副标题使用打字机动画
     typeit = true
     # 是否显示社交链接
@@ -267,7 +267,7 @@ disableThemeInject = false
   [home.posts]
     enable = true
     # 首页文章页面中每页显示的文章数量
-    paginate = 6
+    paginate = 12
 
 # FixIt 0.2.16 | 更改 关于作者的社交配置
 [social]
@@ -379,7 +379,7 @@ disableThemeInject = false
   # 打字完成后光标的持续时间（以毫秒为单位，"-1" 表示无限）
   duration = -1
   # FixIt 0.2.18 | 新增 字符串是否在完成后连续循环
-  loop = false
+  loop = true
 
 # FixIt 0.2.15 | 新增 Mermaid 配置
 [mermaid]
@@ -390,7 +390,7 @@ disableThemeInject = false
 # 参考 https://fixit.lruihao.cn/documentation/content-management/shortcodes/extended/admonition/#custom-admonitions
 # 语法：<type> = <icon>
 [admonition]
-  # ban = "fa-solid fa-ban"
+  ban = "fa-solid fa-ban"
 
 # FixIt 0.3.14 | 新增 自定义任务列表配置
 # 参考 https://fixit.lruihao.cn/documentation/content-management/advanced/#custom-task-lists
@@ -408,7 +408,7 @@ disableThemeInject = false
 # FixIt 0.2.12 | 新增 PanguJS 配置
 [pangu]
   # 适用于中文写作
-  enable = false
+  enable = true
   selector = "article" # FixIt 0.2.17 | 新增
 
 # FixIt 0.2.12 | 新增 水印配置
@@ -538,11 +538,11 @@ disableThemeInject = false
   enable = true
   # 所有可用颜色：
   # ["black", "blue", "green", "orange", "pink", "purple", "red", "silver", "white", "yellow"]
-  color = "blue"
+  color = "green"
   # 所有可用主题：
   # ["barber-shop", "big-counter", "bounce", "center-atom", "center-circle", "center-radar", "center-simple",
   # "corner-indicator", "fill-left", "flash", "flat-top", "loading-bar", "mac-osx", "material", "minimal"]
-  theme = "minimal"
+  theme = "flash"
 
 # FixIt 0.3.10 | 新增 RSS、Atom和JSON Feed的全局Feed配置
 [feed]
@@ -584,7 +584,7 @@ disableThemeInject = false
   comment = []
   footer = []
   widgets = [
-    "custom/wechat-box.html",
+    # "custom/wechat-box.html",
   ]
   assets = [
     "custom/use-assets.html",
@@ -593,6 +593,10 @@ disableThemeInject = false
     "inject/cmpt-mdevtools.html",
     "inject/cmpt-translate.html",
   ]
+  postTocBefore = []
+  postTocAfter = []
+  postContentBefore = []
+  postContentAfter = []
   postFooterBefore = []
   postFooterAfter = [
     "custom/post-footer-after.html"
@@ -748,20 +752,20 @@ disableThemeInject = false
     replace = false
   # FixIt 0.3.0 | 新增 相关内容配置 (https://gohugo.io/content-management/related/)
   [page.related]
-    enable = false
+    enable = true
     count = 5
   # FixIt 0.2.17 | 新增 打赏（赞助）设置
   [page.reward]
-    enable = false
-    animation = false
+    enable = true
+    animation = true
     # 打赏按钮相对于文章页脚的位置，可选值：["before", "after"]
     position = "after"
     # comment = "Buy me a coffee"
     # FixIt 0.2.18 | 新增 二维码图片显示模式，可选值：["static", "fixed"]，默认："static"
     mode = "static"
     [page.reward.ways]
-      # wechatpay = "/images/wechatpay.png"
-      # alipay = "/images/alipay.png"
+      wechatpay = "/images/wechatpay.png"
+      alipay = "/images/alipay.png"
       # paypal = "/images/paypal.png"
       # bitcoin = "/images/bitcoin.png"
   # 文章页的社交分享链接
@@ -778,14 +782,14 @@ disableThemeInject = false
     VK = false
     Buffer = false
     Xing = false
-    Line = false
+    Line = true
     Instapaper = false
     Pocket = false
     Flipboard = false
     Weibo = true
     Myspace = false
     Blogger = false
-    Baidu = false
+    Baidu = true
     Odnoklassniki = false
     Evernote = false
     Skype = false
@@ -793,7 +797,7 @@ disableThemeInject = false
     Mix = false
   # FixIt 0.2.15 | 修改 评论配置
   [page.comment]
-    enable = false
+    enable = true
     # FixIt 0.2.13 | 新增 Artalk评论配置 (https://artalk.js.org/)
     [page.comment.artalk]
       enable = false
@@ -960,9 +964,10 @@ disableThemeInject = false
 
 [flyfish]
   enable = true
-  # light = "rgb(0 119 190 / 10%)"
-  light = "#e6e5f8"
-  dark = "rgb(255 255 255 / 10%)"
+  light = "rgb(0 119 190 / 85%)"
+  # light = "#e6e5f8"
+  dark = "rgb(10 27 43 / 85%)"
+  # dark = "#0a1b2b"
 
 # Content adapters config for component projects
 # https://github.com/hugo-fixit/component-projects
@@ -974,11 +979,7 @@ disableThemeInject = false
   categories = ["GitHub"]
   collections = ["project"]
   # Ignore repos in the ignore list
-  ignoreList = [
-    "Lruihao/MMT",
-    "Lruihao/bill-note",
-    "hugo-fixit/hugo-atom-feed",
-  ]
+  ignoreList = []
   [projectsAdapters.params]
     [projectsAdapters.params.postChat]
         upLoadWeb = true
