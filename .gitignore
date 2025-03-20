@@ -7,3 +7,4 @@ content/private/
 .hugo_build.lock
 _vendor
 jsconfig.json
+go.sum
