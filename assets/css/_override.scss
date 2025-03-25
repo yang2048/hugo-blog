@@ -2,3 +2,15 @@
 // Override Variables
 // 覆盖变量
 // ==============================
+// https://fonts.zeoseven.com/
+@import url("https://static.zeoseven.com/zsft/447/main/result.css");
+$code-font-family: Cascadia Code, Source Code Pro, Menlo, Consolas, Monaco, monospace;
+
+@import url('https://chinese-fonts-cdn.deno.dev/packages/lxgwwenkai/dist/LXGWWenKai-Regular/result.css');
+$global-font-family: LXGW WenKai, system-ui, -apple-system, BlinkMacSystemFont, PingFang SC, Microsoft YaHei UI, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+$global-font-size: 17px;
+
+@import url("https://static.zeoseven.com/zsft/253/main/result.css");
+$header-title-font-family: JasonHandwriting1, system-ui
+// $header-title-font-size: 字体大小
+// $header-title-font-height: 行高

@@ -19,11 +19,13 @@ $global-background-color-dark: #303030 !default;
 }
 
 header {
-  backdrop-filter: blur(10px);
-  background-color: #ffffff00;
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.5);;
   [data-theme="dark"] & {
-    background-color: #ffffff00;
+    background-color: rgba(37, 45, 56, 0.5);
   }
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 5px 8px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 5px 8px 0 rgba(0, 0, 0, 0.1);
 }
 
 // 封面图尺寸适应
