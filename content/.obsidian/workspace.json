@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "private/工作/服务器信息.md",
+                "file": "private/工作/不桃.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "服务器信息"
+              "title": "不桃"
             }
           }
         ],
@@ -185,6 +185,7 @@
   },
   "active": "38bef8738084f0f0",
   "lastOpenFiles": [
+    "private/工作/服务器信息.md",
     "private/linux 环境安装.md",
     "private/工作/辞渊 glossa.md"
   ]
