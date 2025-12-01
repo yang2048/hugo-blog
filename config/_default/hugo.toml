@@ -3,7 +3,7 @@
 # See: https://gohugo.io/getting-started/configuration/
 # -------------------------------------------------------------------------------------
 
-title = "Blog"
+title = "异空间"
 baseURL = "http://localhost:1313"
 # theme = "FixIt"
 

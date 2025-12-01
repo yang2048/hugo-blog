@@ -278,7 +278,7 @@ disableThemeInject = false
   Facebook = ""
   Telegram = ""
   Medium = ""
-  Gitlab = "yyovo"
+  Gitlab = "xdev"
   Youtubelegacy = ""
   Youtubecustom = ""
   Youtubechannel = ""
@@ -469,7 +469,7 @@ disableThemeInject = false
   [analytics.google]
     id = ""
     # 是否匿名化 IP
-    anonymizeIP = true
+    anonymizeIP = false
   # Fathom Analytics
   [analytics.fathom]
     id = ""
@@ -613,13 +613,13 @@ disableThemeInject = false
 # 页面配置
 [page]
   # FixIt 0.2.18 | 新增 是否启用文章作者头像
-  authorAvatar = true
+  authorAvatar = false
   # 是否在首页隐藏页面
   hiddenFromHomePage = false
   # 是否在搜索结果中隐藏页面
-  hiddenFromSearch = false
+  hiddenFromSearch = true
   # FixIt 0.3.0 | 新增 是否在相关文章中隐藏页面
-  hiddenFromRelated = false
+  hiddenFromRelated = true
   # FixIt 0.3.10 | 新增 是否在RSS、Atom和JSON Feed中隐藏页面
   hiddenFromFeed = false
   # 是否启用twemoji
@@ -652,7 +652,7 @@ disableThemeInject = false
   # FixIt 0.2.17 | 新增 是否启用字数统计
   wordCount = false
   # FixIt 0.2.17 | 新增 是否启用阅读时间统计
-  readingTime = false
+  readingTime = true
   # FixIt 0.2.17 | 新增 文章结束标志
   endFlag = "（本文完）"
   # FixIt 0.2.18 | 新增 是否启用instant.page
@@ -671,7 +671,7 @@ disableThemeInject = false
     # 是否启用目录
     enable = true
     # 是否在文章前保留静态目录
-    keepStatic = false
+    keepStatic = true
     # 是否使侧边栏目录自动折叠
     auto = true
     # FixIt 0.2.13 | 新增 目录位置 ["left", "right"]
@@ -747,7 +747,7 @@ disableThemeInject = false
     fullscreen = true
   # FixIt 0.3.0 | 新增 [实验性] 将远程图片缓存到本地，详见：https://github.com/hugo-fixit/FixIt/pull/362
   [page.cacheRemoteImages]
-    enable = false
+    enable = true
     # 用本地图片URL替换远程图片URL（存储在public/images/remote/中）
     replace = false
   # FixIt 0.3.0 | 新增 相关内容配置 (https://gohugo.io/content-management/related/)

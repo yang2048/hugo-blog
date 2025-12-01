@@ -35,7 +35,7 @@
   title = ""
   weight = 2
   [main.params]
-    icon = "fa-solid fa-folder-tree"
+    # icon = "fa-solid fa-folder-tree"
 [[main]]
   identifier = "tags"
   parent = ""
@@ -46,7 +46,7 @@
   title = ""
   weight = 3
   [main.params]
-    icon = "fa-solid fa-tags"
+    # icon = "fa-solid fa-tags"
 [[main]]
   identifier = "projects"
   parent = ""
