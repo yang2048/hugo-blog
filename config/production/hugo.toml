@@ -3,4 +3,4 @@
 # See: https://gohugo.io/getting-started/configuration/
 # -------------------------------------------------------------------------------------
 
-baseURL = "https://yang2048.github.io/hugo-blog/"
+baseURL = "https://yang2048.github.io/"

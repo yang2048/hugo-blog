@@ -4,7 +4,7 @@
 # -------------------------------------------------------------------------------------
 
 # FixIt 主题版本
-version = "0.3.X"
+version = "0.4.X"
 # 网站描述，用于 RSS、SEO、Open Graph 和 Twitter Cards
 description = "博客：探索、发现、分享、记录"
 # 网站关键词
@@ -560,11 +560,10 @@ disableThemeInject = false
 # 依赖于开放的自定义块 https://fixit.lruihao.cn/references/blocks/
 [customPartials]
   head = [
-    "custom/use-assets.html",
-    "inject/shortcode-caniuse.html",
-    "inject/cmpt-flyfish.html",
-    "inject/cmpt-mdevtools.html",
-    "inject/cmpt-translate.html",
+    # "custom/use-assets.html",
+    # "inject/shortcode-caniuse.html",
+    # "inject/cmpt-mdevtools.html",
+    # "inject/cmpt-translate.html",
     "inject/component-projects.html",
     "inject/fixit-docs-bookmark.html",
     "inject/shortcode-rewards.html",
@@ -964,9 +963,9 @@ disableThemeInject = false
 
 [flyfish]
   enable = true
-  light = "rgb(0 119 190 / 85%)"
+  light = "rgb(0 120 190 / 60%)"
   # light = "#e6e5f8"
-  dark = "rgb(10 27 43 / 85%)"
+  dark = "rgb(10 27 43 / 55%)"
   # dark = "#0a1b2b"
 
 # Content adapters config for component projects

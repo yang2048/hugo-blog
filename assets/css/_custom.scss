@@ -139,3 +139,8 @@ header {
     display: none !important;
   }
 }
+
+#flyfish {
+  position: fixed !important;
+  z-index: 99 !important;
+}

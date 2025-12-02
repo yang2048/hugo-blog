@@ -2,7 +2,6 @@ node_modules/
 build/
 public/
 resources/
-content/private/
 
 .hugo_build.lock
 _vendor
